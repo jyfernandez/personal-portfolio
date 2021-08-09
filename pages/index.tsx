@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
+import { ComingSoon } from "../components/ComingSoon";
 import styles from "../styles/Home.module.scss";
-import Logo from "../public/images/logo-black.png";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -12,8 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Image src={Logo} alt="logo" width="400" height="400"></Image>
-        <h1>Coming Soon</h1>
+        <ComingSoon />
       </main>
 
       {/* <footer className={styles.footer}>
